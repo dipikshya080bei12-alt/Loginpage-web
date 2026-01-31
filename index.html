@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f6f8;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 60px;
+            background: #fff;
+        }
+
+        header h3 {
+            color: #3b5cff;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid #3b5cff;
+            padding-bottom: 5px;
+        }
+
+        .container {
+            display: flex;
+            min-height: calc(100vh - 80px);
+            background: #fff;
+        }
+
+        .left {
+            width: 50%;
+            padding: 60px;
+        }
+
+        .left h1 {
+            color: #3b5cff;
+            margin: 20px 0;
+            line-height: 1.3;
+        }
+
+        .left p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .options a {
+            text-decoration: none;
+            color: #3b5cff;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .login {
+            background: #3b5cff;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .signup {
+            background: transparent;
+            color: #3b5cff;
+            border: 1px solid #3b5cff;
+        }
+
+        .social {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .social a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #3b5cff;
+            font-weight: 500;
+        }
+
+        .right {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f7f8fc;
+        }
+
+        .right img {
+            width: 70%;
+        }
+
+        @media(max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h3>Digital</h3>
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="left">
+        <h1>Artificial Intelligence Driving<br>Results For The Travel Industry</h1>
+        <p>Welcome back! Please login to your account.</p>
+
+        <label>Email Address</label>
+        <input type="email" value="hakeem@digital.com">
+
+        <label>Password</label>
+        <input type="password" value="************">
+<div class="buttons">
+            <button class="btn login">Login</button>
+            <button class="btn signup">Sign Up</button>
+        </div>
+        <div class="options">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        
+        <div class="social">
+            Or login with
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Google</a>
+        </div>
+    </div>
+
+    <div class="right">
+        <!-- Replace this image with your own illustration if needed -->
+        <img src="imagesave.JPG" alt="Illustration">
+    </div>
+
+</div>
+
+</body>
+</html>
